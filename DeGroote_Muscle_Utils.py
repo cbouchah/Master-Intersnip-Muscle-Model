@@ -49,8 +49,6 @@ def f_a(l_MN): #with l_M normalized fiber length
 
 #The passive force-length characteristic : f__p
 def f_p(l_MN):
-    if l_MN<1:
-        return 0
     return (np.exp((kpe*(l_MN-1))/e0)-1)/(np.exp(kpe)-1)
 
 #The velocity force-length characteristic : f__v
